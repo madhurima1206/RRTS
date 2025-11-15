@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 import './AdministratorDashboard.css';
 
-const API_BASE_URL = 'http://localhost:5001/api';
+const API_BASE_URL = process.env.REACT_APP_API_URL;
 
 const AdministratorDashboard = ({ user }) => {
   const [activeTab, setActiveTab] = useState('resources');
