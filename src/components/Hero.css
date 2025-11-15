@@ -1,0 +1,104 @@
+/* -------------------------------------------------- */
+/* HERO SECTION - MODERN PROFESSIONAL UI */
+/* -------------------------------------------------- */
+
+.hero {
+  width: 100%;
+  min-height: 85vh;
+  padding: 60px 20px;
+  background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  animation: fadeIn 1.2s ease-in-out;
+}
+
+/* Smooth fade-in animation */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+.hero-content {
+  max-width: 900px;
+  text-align: center;
+  padding: 40px;
+  background: rgba(255, 255, 255, 0.07);
+  border-radius: 20px;
+  backdrop-filter: blur(10px);
+  box-shadow: 0 8px 40px rgba(0, 0, 0, 0.3);
+  animation: scaleIn 1.4s ease;
+}
+
+/* Slight scaling animation */
+@keyframes scaleIn {
+  from { transform: scale(0.95); opacity: 0; }
+  to   { transform: scale(1); opacity: 1; }
+}
+
+.hero-content h1 {
+  font-size: 3rem;
+  font-weight: 700;
+  margin-bottom: 15px;
+  letter-spacing: 1px;
+  color: #ffffff;
+  text-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+}
+
+.hero-content p {
+  font-size: 1.15rem;
+  color: #e6e6e6;
+  margin-bottom: 40px;
+  line-height: 1.7;
+}
+
+/* FEATURES */
+.hero-features {
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+  flex-wrap: wrap;
+}
+
+.feature {
+  width: 260px;
+  padding: 25px;
+  background: rgba(255, 255, 255, 0.15);
+  border-radius: 18px;
+  backdrop-filter: blur(10px);
+  text-align: center;
+  transition: 0.3s ease;
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  box-shadow: 0 5px 25px rgba(0, 0, 0, 0.25);
+}
+
+/* Hover effects */
+.feature:hover {
+  transform: translateY(-12px) scale(1.03);
+  background: rgba(255, 255, 255, 0.22);
+  box-shadow: 0 8px 35px rgba(0, 0, 0, 0.35);
+}
+
+.feature h3 {
+  font-size: 1.4rem;
+  margin-bottom: 8px;
+  color: #ffffff;
+  font-weight: 600;
+}
+
+.feature p {
+  font-size: 0.95rem;
+  color: #dcdcdc;
+  line-height: 1.4;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .hero-content h1 {
+    font-size: 2.4rem;
+  }
+  .feature {
+    width: 80%;
+  }
+}

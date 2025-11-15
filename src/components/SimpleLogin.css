@@ -1,0 +1,286 @@
+/* SimpleLogin.css */
+.simple-login-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    overflow-y: auto;
+    z-index: 1000;
+  }
+  
+  .simple-login-container {
+    background: white;
+    border-radius: 8px;
+    border: 2px solid #000000;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    width: 100%;
+    max-width: 450px;
+    max-height: 90vh;
+    overflow-y: auto;
+    position: relative;
+  }
+  
+  .login-header-with-back {
+    background: #000000;
+    color: white;
+    padding: 20px;
+    border-radius: 6px 6px 0 0;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+  }
+  
+  .back-btn {
+    background: #333333;
+    border: 1px solid #666666;
+    color: white;
+    padding: 8px 16px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+    margin-bottom: 15px;
+    transition: all 0.2s ease;
+  }
+  
+  .back-btn:hover {
+    background: #555555;
+  }
+  
+  .login-header-with-back h2 {
+    margin: 0;
+    font-size: 1.5rem;
+    text-align: center;
+  }
+  
+  .login-content {
+    padding: 20px;
+  }
+  
+  .login-info {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #666666;
+  }
+  
+  .login-info p {
+    margin: 0;
+    font-size: 14px;
+  }
+  
+  .login-form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  .form-group {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .form-group label {
+    margin-bottom: 8px;
+    font-weight: 600;
+    color: #000000;
+    font-size: 14px;
+  }
+  
+  .form-group input {
+    padding: 12px 16px;
+    border: 1px solid #cccccc;
+    border-radius: 4px;
+    font-size: 14px;
+    background: white;
+    color: #000000;
+    transition: all 0.2s ease;
+  }
+  
+  .form-group input:focus {
+    outline: none;
+    border-color: #000000;
+    box-shadow: 0 0 0 2px rgba(0, 0, 0, 0.1);
+  }
+  
+  .form-group input::placeholder {
+    color: #999999;
+  }
+  
+  .message {
+    padding: 12px 16px;
+    border-radius: 4px;
+    font-size: 14px;
+    text-align: center;
+    margin: 10px 0;
+    border: 1px solid;
+  }
+  
+  .message.success {
+    background: #f0f0f0;
+    color: #000000;
+    border-color: #cccccc;
+  }
+  
+  .message.error {
+    background: #f0f0f0;
+    color: #000000;
+    border-color: #cccccc;
+  }
+  
+  .submit-btn {
+    background: #000000;
+    color: white;
+    border: none;
+    padding: 14px 20px;
+    border-radius: 4px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.2s ease;
+  }
+  
+  .submit-btn:hover:not(:disabled) {
+    background: #333333;
+  }
+  
+  .submit-btn:disabled {
+    background: #666666;
+    cursor: not-allowed;
+  }
+  
+  .toggle-section {
+    text-align: center;
+    margin-top: 20px;
+    padding-top: 20px;
+    border-top: 1px solid #cccccc;
+  }
+  
+  .toggle-section p {
+    margin: 0;
+    color: #666666;
+    font-size: 14px;
+  }
+  
+  .toggle-link {
+    color: #000000;
+    cursor: pointer;
+    font-weight: 600;
+    text-decoration: underline;
+    transition: color 0.2s ease;
+  }
+  
+  .toggle-link:hover {
+    color: #333333;
+  }
+  
+  .demo-section {
+    margin: 20px 0;
+    text-align: center;
+  }
+  
+  .demo-toggle-btn {
+    background: #f0f0f0;
+    border: 1px solid #cccccc;
+    color: #000000;
+    padding: 10px 16px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: all 0.2s ease;
+    width: 100%;
+  }
+  
+  .demo-toggle-btn:hover {
+    background: #e0e0e0;
+  }
+  
+  .demo-credentials-popup {
+    background: #f8f8f8;
+    border: 1px solid #cccccc;
+    border-radius: 4px;
+    padding: 16px;
+    margin-top: 12px;
+    text-align: left;
+  }
+  
+  .demo-credentials-popup h4 {
+    margin: 0 0 12px 0;
+    color: #000000;
+    font-size: 14px;
+  }
+  
+  .demo-credentials-popup p {
+    margin: 8px 0;
+    font-size: 13px;
+    color: #666666;
+  }
+  
+  .demo-credentials-popup strong {
+    color: #000000;
+  }
+  
+  .fill-demo-btn {
+    background: #333333;
+    color: white;
+    border: none;
+    padding: 10px 16px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 13px;
+    margin-top: 12px;
+    width: 100%;
+    transition: all 0.2s ease;
+  }
+  
+  .fill-demo-btn:hover {
+    background: #000000;
+  }
+  
+  /* Scrollbar Styling */
+  .simple-login-container::-webkit-scrollbar {
+    width: 6px;
+  }
+  
+  .simple-login-container::-webkit-scrollbar-track {
+    background: #f1f1f1;
+  }
+  
+  .simple-login-container::-webkit-scrollbar-thumb {
+    background: #cccccc;
+    border-radius: 3px;
+  }
+  
+  .simple-login-container::-webkit-scrollbar-thumb:hover {
+    background: #999999;
+  }
+  
+  /* Responsive Design */
+  @media (max-height: 700px) {
+    .simple-login-overlay {
+      align-items: flex-start;
+      padding-top: 40px;
+    }
+    
+    .simple-login-container {
+      max-height: 85vh;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .simple-login-overlay {
+      padding: 10px;
+    }
+    
+    .simple-login-container {
+      max-height: 95vh;
+    }
+    
+    .login-content {
+      padding: 15px;
+    }
+  }

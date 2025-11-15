@@ -1,0 +1,363 @@
+.contact-section {
+    padding: 4rem 0;
+    background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+    min-height: 100vh;
+  }
+  
+  .contact-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 4rem;
+    margin-bottom: 4rem;
+  }
+  
+  .contact-info h2 {
+    color: #1e3c72;
+    margin-bottom: 1rem;
+    font-size: 2.2rem;
+  }
+  
+  .contact-description {
+    color: #666;
+    line-height: 1.7;
+    margin-bottom: 2.5rem;
+    font-size: 1.1rem;
+  }
+  
+  .contact-methods {
+    margin-bottom: 3rem;
+  }
+  
+  .contact-method {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1.5rem;
+    padding: 1.5rem;
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+    text-decoration: none;
+    color: inherit;
+    transition: all 0.3s ease;
+    border: 1px solid transparent;
+  }
+  
+  .contact-method:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+    border-color: #4facfe;
+  }
+  
+  .method-icon {
+    font-size: 2.5rem;
+    margin-right: 1.5rem;
+    min-width: 60px;
+  }
+  
+  .method-details h4 {
+    color: #1e3c72;
+    margin-bottom: 0.5rem;
+    font-size: 1.2rem;
+  }
+  
+  .method-info {
+    font-weight: 600;
+    color: #1e3c72;
+    margin: 0.25rem 0;
+    font-size: 1rem;
+  }
+  
+  .method-desc {
+    color: #666;
+    font-size: 0.9rem;
+    margin: 0;
+  }
+  
+  .departments-section {
+    margin-top: 2rem;
+  }
+  
+  .departments-section h3 {
+    color: #1e3c72;
+    margin-bottom: 1.5rem;
+    font-size: 1.5rem;
+  }
+  
+  .departments-grid {
+    display: grid;
+    gap: 1rem;
+  }
+  
+  .department-card {
+    background: white;
+    padding: 1.5rem;
+    border-radius: 10px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.08);
+    border-left: 4px solid #4facfe;
+  }
+  
+  .department-card h5 {
+    color: #1e3c72;
+    margin-bottom: 1rem;
+    font-size: 1.1rem;
+  }
+  
+  .dept-contacts {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+  
+  .dept-contacts a {
+    color: #666;
+    text-decoration: none;
+    transition: color 0.3s ease;
+    font-size: 0.9rem;
+  }
+  
+  .dept-contacts a:hover {
+    color: #4facfe;
+  }
+  
+  .contact-form-container {
+    background: white;
+    padding: 2.5rem;
+    border-radius: 15px;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.1);
+    height: fit-content;
+  }
+  
+  .form-header {
+    text-align: center;
+    margin-bottom: 2rem;
+  }
+  
+  .form-header h3 {
+    color: #1e3c72;
+    margin-bottom: 0.5rem;
+    font-size: 1.8rem;
+  }
+  
+  .form-header p {
+    color: #666;
+    font-size: 1rem;
+  }
+  
+  .contact-form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .form-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+  }
+  
+  .form-group {
+    margin-bottom: 1.5rem;
+  }
+  
+  .form-label {
+    display: block;
+    margin-bottom: 0.5rem;
+    color: #333;
+    font-weight: 600;
+    font-size: 0.95rem;
+  }
+  
+  .form-control {
+    width: 100%;
+    padding: 0.75rem 1rem;
+    border: 2px solid #e1e8ed;
+    border-radius: 8px;
+    font-size: 1rem;
+    transition: all 0.3s ease;
+    background: #f8f9fa;
+  }
+  
+  .form-control:focus {
+    outline: none;
+    border-color: #4facfe;
+    background: white;
+    box-shadow: 0 0 0 3px rgba(79, 172, 254, 0.1);
+  }
+  
+  .form-control::placeholder {
+    color: #999;
+  }
+  
+  .submit-btn {
+    background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);
+    color: white;
+    border: none;
+    padding: 1rem 2rem;
+    border-radius: 8px;
+    font-size: 1.1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    margin-top: 1rem;
+  }
+  
+  .submit-btn:hover:not(:disabled) {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(79, 172, 254, 0.4);
+  }
+  
+  .submit-btn:disabled {
+    opacity: 0.7;
+    cursor: not-allowed;
+    transform: none;
+  }
+  
+  .submit-btn.submitting {
+    background: linear-gradient(135deg, #6c757d 0%, #adb5bd 100%);
+  }
+  
+  .spinner {
+    width: 18px;
+    height: 18px;
+    border: 2px solid transparent;
+    border-top: 2px solid white;
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+  }
+  
+  @keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }
+  
+  .success-message {
+    background: #d4edda;
+    color: #155724;
+    padding: 1rem;
+    border-radius: 8px;
+    margin-top: 1rem;
+    text-align: center;
+    border: 1px solid #c3e6cb;
+    font-weight: 500;
+  }
+  
+  .faq-section {
+    background: white;
+    padding: 3rem 2.5rem;
+    border-radius: 15px;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.1);
+  }
+  
+  .faq-section h2 {
+    text-align: center;
+    color: #1e3c72;
+    margin-bottom: 3rem;
+    font-size: 2.2rem;
+  }
+  
+  .faq-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+  }
+  
+  .faq-item {
+    padding: 1.5rem;
+    background: #f8f9fa;
+    border-radius: 10px;
+    border-left: 4px solid #4facfe;
+  }
+  
+  .faq-item h4 {
+    color: #1e3c72;
+    margin-bottom: 1rem;
+    font-size: 1.1rem;
+    font-weight: 600;
+  }
+  
+  .faq-item p {
+    color: #666;
+    line-height: 1.6;
+    font-size: 0.95rem;
+    margin: 0;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 968px) {
+    .contact-content {
+      grid-template-columns: 1fr;
+      gap: 3rem;
+    }
+    
+    .contact-form-container {
+      order: -1;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .contact-section {
+      padding: 2rem 0;
+    }
+    
+    .contact-content {
+      gap: 2rem;
+    }
+    
+    .form-row {
+      grid-template-columns: 1fr;
+    }
+    
+    .contact-form-container {
+      padding: 2rem;
+    }
+    
+    .contact-method {
+      padding: 1.25rem;
+    }
+    
+    .method-icon {
+      font-size: 2rem;
+      margin-right: 1rem;
+      min-width: 50px;
+    }
+    
+    .faq-section {
+      padding: 2rem 1.5rem;
+    }
+    
+    .faq-grid {
+      grid-template-columns: 1fr;
+    }
+    
+    .section-header h1 {
+      font-size: 2.2rem;
+    }
+    
+    .contact-info h2 {
+      font-size: 1.8rem;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .contact-form-container {
+      padding: 1.5rem;
+    }
+    
+    .contact-method {
+      flex-direction: column;
+      text-align: center;
+      padding: 1.5rem 1rem;
+    }
+    
+    .method-icon {
+      margin-right: 0;
+      margin-bottom: 1rem;
+    }
+    
+    .faq-section {
+      padding: 1.5rem 1rem;
+    }
+  }

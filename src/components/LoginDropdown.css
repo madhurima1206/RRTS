@@ -1,0 +1,183 @@
+.login-dropdown-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(26, 26, 26, 0.95);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 2000;
+    padding: 20px;
+    backdrop-filter: blur(8px);
+  }
+  
+  .login-dropdown {
+    background: #ffffff;
+    border-radius: 12px;
+    padding: 2.5rem;
+    max-width: 1100px;
+    width: 90%;
+    max-height: 90vh;
+    overflow-y: auto;
+    box-shadow: 0 25px 50px rgba(0,0,0,0.25);
+    border: 1px solid #e0e0e0;
+  }
+  
+  .dropdown-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 2.5rem;
+    padding-bottom: 1.5rem;
+    border-bottom: 2px solid #f0f0f0;
+  }
+  
+  .dropdown-header h3 {
+    color: #1a1a1a;
+    font-size: 1.6rem;
+    font-weight: 700;
+  }
+  
+  .close-btn {
+    background: #f8f8f8;
+    border: 2px solid #e0e0e0;
+    width: 42px;
+    height: 42px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+    cursor: pointer;
+    color: #666;
+    transition: all 0.3s ease;
+    font-weight: 300;
+  }
+  
+  .close-btn:hover {
+    background: #1a1a1a;
+    color: #ffffff;
+    border-color: #1a1a1a;
+  }
+  
+  .users-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 1.8rem;
+  }
+  
+  .user-card {
+    background: #ffffff;
+    border: 2px solid #f0f0f0;
+    border-radius: 10px;
+    padding: 2rem 1.5rem;
+    text-align: center;
+    transition: all 0.3s ease;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .user-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 4px;
+    background: #1a1a1a;
+    transform: scaleX(0);
+    transition: transform 0.3s ease;
+  }
+  
+  .user-card:hover::before {
+    transform: scaleX(1);
+  }
+  
+  .user-card:hover {
+    transform: translateY(-8px);
+    border-color: #1a1a1a;
+    box-shadow: 0 15px 35px rgba(0,0,0,0.1);
+  }
+  
+  .user-icon {
+    width: 80px;
+    height: 80px;
+    background: #f8f8f8;
+    color: #1a1a1a;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2rem;
+    font-weight: 700;
+    margin: 0 auto 1.5rem;
+    border: 2px solid #e0e0e0;
+    transition: all 0.3s ease;
+  }
+  
+  .user-card:hover .user-icon {
+    background: #1a1a1a;
+    color: #ffffff;
+    border-color: #1a1a1a;
+    transform: scale(1.1);
+  }
+  
+  .user-card h4 {
+    color: #1a1a1a;
+    margin-bottom: 1rem;
+    font-size: 1.4rem;
+    font-weight: 700;
+  }
+  
+  .user-card p {
+    color: #666;
+    margin-bottom: 1.5rem;
+    font-size: 0.95rem;
+    line-height: 1.5;
+    font-weight: 400;
+  }
+  
+  .login-user-btn {
+    background: #1a1a1a;
+    color: white;
+    border: 2px solid #1a1a1a;
+    padding: 0.8rem 1.5rem;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: 600;
+    font-size: 0.95rem;
+    transition: all 0.3s ease;
+    width: 100%;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+  }
+  
+  .login-user-btn:hover {
+    background: #ffffff;
+    color: #1a1a1a;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+  }
+  
+  @media (max-width: 768px) {
+    .users-grid {
+      grid-template-columns: 1fr;
+    }
+    
+    .login-dropdown {
+      padding: 2rem 1.5rem;
+    }
+    
+    .dropdown-header h3 {
+      font-size: 1.4rem;
+    }
+    
+    .user-icon {
+      width: 70px;
+      height: 70px;
+      font-size: 1.8rem;
+    }
+  }
