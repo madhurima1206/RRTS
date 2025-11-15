@@ -491,7 +491,6 @@ const ResidentDashboard = ({ user }) => {
                           </div>
                           <div className="complaint-meta">
                             <p><strong>Submitted:</strong> {new Date(complaint.createdAt).toLocaleDateString()}</p>
-                            <p><strong>Completed On:</strong> {new Date(complaint.completedAt).toLocaleDateString()}</p>
                           </div>
                         </div>
                       ))
