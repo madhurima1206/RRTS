@@ -2,7 +2,8 @@ import React, { useState, useEffect } from "react";
 import axios from "axios";
 import "./SupervisorDashboard.css";
 
-const API_BASE_URL = "http://localhost:5001/api";
+const API_BASE_URL = process.env.REACT_APP_API_URL;
+
 
 /* ------------------- Fixed materials & defaults ------------------- */
 const FIXED_MATERIALS = ["Cement", "Asphalt", "Gravel"];
