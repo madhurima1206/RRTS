@@ -1,11 +1,14 @@
 const { Sequelize } = require('sequelize');
+const path = require('path');
 
-// Create SQLite database connection
 const sequelize = new Sequelize({
   dialect: 'sqlite',
-  storage: './database/roadrepair.sqlite',
-  logging: false, // Set to console.log to see SQL queries
+  storage: path.join(__dirname, 'roadrepair.sqlite'),
+  logging: false,
 });
+
+// Create SQLite database connection
+
 
 // Test database connection
 const testConnection = async () => {
